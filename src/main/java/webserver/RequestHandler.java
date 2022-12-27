@@ -82,7 +82,6 @@ public class RequestHandler extends Thread {
                     responseResource(out, "/user/login_failed.html");
                 }
             }else if("/user/list".equals(url)){
-                log.debug("/user/list : {}", logined);
                 if (!logined){
                     responseResource(out, "/user/login.html");
                     return;
